@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    padding: 2rem;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.main-img{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.product{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.main-img:hover .preview-icon{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.preview-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(178, 100%, 50%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+}
+
+.description{
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+.box , .profile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    margin-bottom: 1.5rem;
+}
+
+.box span, 
+.profile span{
+    display: flex;
+    align-items: center;
+}
+
+.box p{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+}
+
+.pfp{
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+hr{
+    margin-bottom: 1.5rem;
+    border-color: hsl(215, 32%, 27%);
+}
+
+.profile p{
+    color: hsl(215, 51%, 70%);
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media only screen and (max-width: 500px){
+    .container{
+        width: 90%;
+    }
+}
